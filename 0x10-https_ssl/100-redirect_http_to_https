@@ -45,7 +45,7 @@ frontend deesignz-frontend-https
         http-request set-header X-Forwarded-Proto https
         default_backend deesignz-backend
 
-backend deesignz-backend
-        balance roundrobin
-        server 530661-web-01 54.167.89.121 check
-        server 530661-web-02 54.237.80.187 check
+backend deesignz-backend 
+	balance roundrobin 
+	server 530661-web-01 54.167.89.121 check 
+	server 530661-web-02 54.237.80.187 check
